@@ -15,7 +15,7 @@ img = np.zeros((300,512,3), np.uint8)
 name = 'HSV Bounds Tool'
 cv2.namedWindow(name)
 
-src = cv2.imread('lighter.jpg')
+src = cv2.imread(sys.argv[1])
 hsv = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 
 # Sliders to change HSV upper/lower bounds
